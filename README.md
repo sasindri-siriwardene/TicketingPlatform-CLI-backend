@@ -16,25 +16,47 @@ The Ticketing System is a Java-based application that simulates a ticket vending
    cd TicketingPlatform-Java
    ```
 2.**Build the application**:
+```sh
 mvn clean install
-Run the application:  
+```
+3.**Run the application**:  
+```sh
 mvn spring-boot:run
-Usage Instructions
-How to Configure and Start the System
-Configuration:  
-Ensure the config.json file is present in the src/main/resources directory with the necessary configuration parameters (e.g., ticket release rate, customer retrieval rate, total tickets, max ticket capacity).
-Start the System:  
-Start the Spring Boot application as described in the setup instructions.
-Explanation of UI Controls
-WebSocket Endpoint:  
-Connect to the WebSocket endpoint using a client like Postman.
+```
+## Usage Instructions
+
+- How to Configure and Start the System
+
+1.**Configuration**:  
+
+- Ensure the config.json file is present in the src/main/resources directory with the necessary configuration parameters (e.g., ticket release rate, customer retrieval rate, total tickets, max ticket capacity).
+- Ticket Release Rate: Frequency of ticket availability.
+- Customer Retrieval Rate: Speed of customer processing.
+- Total Tickets: Number of total  tickets added by a vendor.
+- Max Ticket Capacity: Maximum number of tickets allowed in the system at once.
+
+2.**Start the System**:  
+
+- Start the Spring Boot application as described in the setup instructions.
+
+### Explanation of UI Controls
+
+#### WebSocket Endpoint:  
+- Connect to the WebSocket endpoint using a client like Postman.
+
 URL: ws://localhost:8080/gettickets
-Messages:  
-Send a message to get the current ticket status:
+
+#### Messages:  
+- Send a message to get the current ticket status:
+```sh
 /gettickets
-Send a message to close the connection:
+```
+- Send a message to close the connection:
+```sh
 close
-Postman Configuration:
-Open Postman and create a new WebSocket request.
-Enter the WebSocket URL and connect.
-Use the message field to send commands and view responses in the messages section.
+```
+### Postman Configuration:
+
+- Open Postman and create a new WebSocket request.
+- Enter the WebSocket URL and connect.
+- Use the message field to send commands and view responses in the messages section.
