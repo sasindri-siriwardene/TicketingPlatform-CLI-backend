@@ -1,9 +1,9 @@
-# Ticketing System
+# 🎫 Ticketing System
 
 ## Introduction
 The Ticketing System is a Java-based application that simulates a ticket vending and purchasing system using WebSockets. Vendors release tickets at a specified rate, and consumers purchase tickets at a specified rate. The system uses Spring Boot for the backend and can be tested using Postman or any WebSocket client.
 
-## Setup Instructions
+##  🛠️  Setup Instructions
 
 ### Prerequisites
 - Java 17 or higher
@@ -23,11 +23,11 @@ mvn clean install
 ```sh
 mvn spring-boot:run
 ```
-## Usage Instructions
+## 📖 Usage Instructions
 
 - How to Configure and Start the System
 
-1.**Configuration**:  
+1.🛠️ **Configuration**:  
 
 - Ensure the config.json file is present in the src/main/resources directory with the necessary configuration parameters (e.g., ticket release rate, customer retrieval rate, total tickets, max ticket capacity).
 - Ticket Release Rate: Frequency of ticket availability.
@@ -35,11 +35,11 @@ mvn spring-boot:run
 - Total Tickets: Number of total  tickets added by a vendor.
 - Max Ticket Capacity: Maximum number of tickets allowed in the system at once.
 
-2.**Start the System**:  
+2. 🚀 **Start the System**:  
 
 - Start the Spring Boot application as described in the setup instructions.
 
-### Explanation of UI Controls
+### 💻  Explanation of UI Controls
 
 #### WebSocket Endpoint:  
 - Connect to the WebSocket endpoint using a client like Postman.
@@ -55,7 +55,7 @@ URL: ws://localhost:8080/gettickets
 ```sh
 close
 ```
-### Postman Configuration:
+### 🧪 Postman Configuration:
 
 - Open Postman and create a new WebSocket request.
 - Enter the WebSocket URL and connect.
